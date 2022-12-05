@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Better Way To Save & Invest Online - PiggyVest</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Font Awesome CDN -->
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+</head>
+
+<body class="font-body">
+    <!-- Navigation Bar -->
+    <nav class="bg-white w-full md:fixed">
+        <div class="max-w-[90%] mx-auto px-4 mt-5">
+            <div class="flex justify-between">
+                <div class="flex justify-center items-center">
+                    <!-- Website Logo -->
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <img src="./images/logo.svg" alt="Logo" class="h-10 w-44 mr-2">
+
+                    </a>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="" class="py-4 px-3 text-black font-medium text-[17px] ">Save</a>
+                        <a href="" class="py-4 px-3 text-black font-medium text-[17px]">Invest</a>
+                        <a href="" class="py-4 px-3 text-black font-medium text-[17px]">Stories</a>
+                        <a href="" class="py-4 px-3 text-black font-medium text-[17px]">FAQs</a>
+                        <a href="" class="py-4 px-3 text-black font-medium text-[17px]">Blog</a>
+                        <!-- <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Sign In</a>
+                        <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Create free account</a> -->
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <button
+                        class="bg-transparent hover:border-blue text-black font-semibold py-3 px-5 p-2 border border-cyan-300 rounded-lg text-[17px]">
+                        Sign In
+                    </button>
+                    <a href=""
+                        class="py-3 px-5 font-semibold text-white bg-veryDarkBlue hover:bg-[#0d60d8] rounded-lg text-[17px]">Create
+                        free account</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-black-500 hover:text-gray-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="text-center">
+                <div class="pb-3">
+                    <a href="" class="block text-sm px-2 py-4 text-black font-semibold">Save</a>
+                    <a href="" class="block text-sm px-2 py-4 text-black font-semibold">Invest</a>
+                    <a href="" class="block text-sm px-2 py-4 text-black font-semibold">Stories</a>
+                    <a href="" class="block text-sm px-2 py-4 text-black font-semibold">FAQs</a>
+                    <a href="" class="block text-sm px-2 py-4 text-black font-semibold">Blog</a>
+
+                    <button
+                        class="bg-transparent text-black font-semibold py-3 border-2 border-blue rounded-lg w-[90%]">
+                        Sign In
+                    </button><br><br>
+                    <button class="bg-black hover:bg-[#0d60d8] text-white font-semibold py-3 px-4 rounded-lg w-[90%]">
+                        Create free account
+                    </button>
+                </div>
+
+        </div>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <section class="header">
+        <div class="flex justify-center items-center">
+            <div class="md:mt-[10rem] mt-28 w-[90%]">
+                <div class="md:flex md:justify-center md:items-center block">
+                    <div>
+                        <h1
+                            class="md:text-7xl text-5xl md:text-left text-center font-body font-extrabold text-black md:w-[70%] md:leading-[82.42px] leading-[70px]">
+                            The Better way to Save & Invest.
+                        </h1>
+                        <p
+                            class="font-thin md:text-lg text-base md:text-left text-center text-black md:w-[68%] md:pt-0 pt-5">
+                            PiggyVest helps over 3 million
+                            customers achieve their financial goals by helping them save and invest with ease.
+                        </p>
+                        <div class="mt-10 md:block flex justify-center items-center">
+                            <a href=""
+                                class="py-4 px-5 font-semibold text-white bg-veryDarkBlue hover:bg-[#0d60d8] rounded-lg text-[17px]">Create
+                                free account</a>
+                        </div>
+                        <div class="mt-14">
+                            <div class="md:block flex justify-center">
+                                <a href=""
+                                    class="border-2 md:mr-10 mr-[20px] border-[#1d293a] md:text-base text-sm rounded-lg md:py-3 py-2 md:px-5 px-3">
+                                    <i class="fa-brands fa-apple"></i>
+                                    Get on iPhone
+                                </a>
+                                <a href=""
+                                    class="border-2 border-[#1d293a] md:text-base text-sm rounded-lg md:py-3 py-2 md:px-5 px-3">
+                                    <i class="fa-brands fa-google-play"></i>
+                                    Get on Android
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/headerImg.png" class="h-[500px] max-w-[362px] md:mt-0 mt-12">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security">
+        <div class="mt-48 md:flex md:justify-center md:items-center block">
+            <img src="./images/security.png" width="100px" class="md:mx-0 mx-auto">
+            <div class="md:w-[55%] w-[100%] pl-10">
+                <h1 class="text-[37px] font-bold pb-2 md:text-left text-center">Your security is our priority</h1>
+                <p class="text-[15.5px] font-thin pb-5 md:text-left text-center">
+                    PiggyVest uses the highest level of Internet Security and it is secured by 256 bits SSL security
+                    encryption to ensure that your information is comepletely protected from fraud.
+                </p>
+                <a href="" class="text-blue text-[17px] md:block flex justify-center">Learn more ></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savings Section -->
+    <section class="savings">
+        <div class="grid mt-48">
+            <div class="w-[30%] bg-white">
+                <h1 class="text-5xl font-bold">4 ways to build your savings</h1>
+                <p class="text-lg pt-6 pb-14 font-thin">Earn 5-15% when you save with any of these PiggyVest plans.</p>
+                <a href=""
+                    class="py-4 px-5 font-semibold text-white bg-veryDarkBlue hover:bg-[#0d60d8] rounded-lg text-[17px]">Start
+                    Saving</a>
+            </div>
+
+            <div class="w-[30%] bg-[#f9f9f9] flex justify-center items-center">
+                <div class="p-10">
+                    <img src="./images/piggy.png" width="50px">
+                    <h3 class="text-2xl">Automated Savings</h3>
+                    <p class="text-lg font-thin">
+                        Build a dedicated savings faster on your terms automatically or manually.
+                    </p>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col3">
+                <h1>$ ways </h1>
+            </div>
+
+            <div class="col3">
+                <h1>$ ways </h1>
+            </div>
+
+            <div class="col3">
+                <h1>$ ways </h1>
+            </div>
+
+            <div class="col3">
+                <h1>$ ways </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="invest">
+        <img src="./images/invest.png" alt="">
+        <article>
+
+            <button class="returns">Up To 25% Returns</button>
+
+            <h2>Access investment opportunities</h2>
+            <p>Invest securely and confidently on the go. Grow your money confidently by investing in pre-vetted
+                investment opportunities.</p>
+            <p><a href="">Learn more about Investments ></a></p>
+        </article>
+    </section>
+
+
+    <!-- Saver of the Month Section -->
+
+    <section class="saver">
+        <article>
+            <h2>Meet the saver of the month!</h2>
+            <p>Every month, we shine a spotlight on one saver, asking them questions about their savings culture and how
+                the product is specifically helping them shape how they spend and save for future responsibilities.</p>
+            <p><a href="">Meet Cassie Daves></a></p>
+        </article>
+        <img src="./images/maxresdefault.jpg" alt="">
+        <!-- <img src="./images/Untitled-design-2022-06-30T121618.113.png" alt=""> -->
+    </section>
+
+
+    <!-- Reviews Section -->
+
+    <section class="reviews">
+        <div class="customers">
+
+            <marquee behavior="scroll" direction="up">
+                <div class="box" id="scroll-container">
+
+                    <small>Tuesday, 12th of July 2022 by 14:03 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/ava5760e58fb6.jpg"
+                            alt="Stephen N" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Stephen N</h6>
+                            </small>
+                            <small>
+                                <p>Before I had a piggy box to save in but I found myself taking from the box each time
+                                    I'm broke. Sometimes I spent lavishly knowing I could take from the box anytime I
+                                    wanted but Piggyvest has helped me curtail some spending habits and has helped me
+                                    save. Thank you Piggyvest</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Monday, 11th of July 2022 by 21:50 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img22422cd8dd.jpeg"
+                            alt="Onabanjo M" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Onabanjo M</h6>
+                            </small>
+                            <small>
+                                <p>Piggyvest has helped me realize the easiest and fastest way to save money without
+                                    bank issues
+                                    My aunt and uncle are also thankful to Piggyvest.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Wednesday, 6th of July 2022 by 19:11 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img3929c6b2e1.jpeg"
+                            alt="Emmanuella I" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Emmanuella I</h6>
+                            </small>
+                            <small>
+                                <p>Piggyvest has been so helpful to me. I save up money and used it in buying my makeup
+                                    kits for my handwork/business.
+                                    Sometimes, I get really broke and tempted to touch my savings but it's a no no.
+                                    Thank you piggy. I have referred my sister's and friends and would continue to save
+                                    to save my life.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Sunday, 3rd of April 2022 by 03:09 AM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img5b900ae055.jpeg"
+                            alt="Yusuf O" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Yusuf O</h6>
+                            </small>
+                            <small>
+                                <p>I can't even believe I can be this diligent towards saving. Thank you Piggy.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Tuesday, 12th of July 2022 by 14:03 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/ava5760e58fb6.jpg"
+                            alt="Stephen N" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Stephen N</h6>
+                            </small>
+                            <small>
+                                <p>Before I had a piggy box to save in but I found myself taking from the box each time
+                                    I'm broke. Sometimes I spent lavishly knowing I could take from the box anytime I
+                                    wanted but Piggyvest has helped me curtail some spending habits and has helped me
+                                    save. Thank you Piggyvest</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Monday, 11th of July 2022 by 21:50 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img22422cd8dd.jpeg"
+                            alt="Onabanjo M" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Onabanjo M</h6>
+                            </small>
+                            <small>
+                                <p>Piggyvest has helped me realize the easiest and fastest way to save money without
+                                    bank issues
+                                    My aunt and uncle are also thankful to Piggyvest.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Wednesday, 6th of July 2022 by 19:11 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img3929c6b2e1.jpeg"
+                            alt="Emmanuella I" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Emmanuella I</h6>
+                            </small>
+                            <small>
+                                <p>Piggyvest has been so helpful to me. I save up money and used it in buying my makeup
+                                    kits for my handwork/business.
+                                    Sometimes, I get really broke and tempted to touch my savings but it's a no no.
+                                    Thank you piggy. I have referred my sister's and friends and would continue to save
+                                    to save my life.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" id="scroll-container">
+                    <small>Wednesday, 6th of July 2022 by 19:11 PM</small>
+                    <div class="d-flex mt-20 clear-right">
+                        <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img3929c6b2e1.jpeg"
+                            alt="Emmanuella I" width="35" height="10">
+                        <div>
+                            <small>
+                                <h6>Emmanuella I</h6>
+                            </small>
+                            <small>Piggyvest has been so helpful to me. I save up money and used it in buying my makeup
+                                kits for my handwork/business.
+                                Sometimes, I get really broke and tempted to touch my savings but it's a no no. Thank
+                                you piggy. I have referred my sister's and friends and would continue to save to save my
+                                life.</p></small>
+                            <p>
+                        </div>
+                    </div>
+                </div>
+
+            </marquee>
+        </div>
+
+        <article>
+            <h2>3 Million + customers</h2>
+            <p>Since launching in 2016, over 3,000,000 people have used PiggyVest to manage their money better, avoid
+                over-spending and be more accountable.</p>
+            <button class="dark-btn"><a href="#"> Create free account</a></button>
+
+            <br><br>
+
+            <button class="btn"><a href="#"><i class="fab fa-apple"></i> Get on iPhone</a></button>
+            <button class="btn"><a href="#"><i class="fab fa-google-play"></i> Get on Android</a></button>
+        </article>
+    </section>
+
+    <!-- News Section -->
+
+    <section class="news">
+        <div class="papers">
+            <h2>As featured in</h2>
+            <ul>
+                <li>
+                    <img src="./images/techpoint image.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/guardian image.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/techcrunch image.png" alt="">
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-items">
+
+            <div class="items">
+                <div class="logo-div">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Products</strong></li>
+                    <li>Piggybank</li>
+                    <li>Invest</li>
+                    <li>Safelock</li>
+                    <li>Target Savings</li>
+                    <li>Flex Naira</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><strong>Company</strong></li>
+                    <li>About</li>
+                    <li>FAQs</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><strong>Legal</strong></li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>
+                        <div class="icons">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-instagram-square"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria.</p>
+                    </li>
+                    <li>
+                        <p>contact@piggyvest.com
+                        </p>
+                    </li>
+                    <li>
+                        <p>+234 700 933 933 933</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+
+
+            </div>
+        </div>
+
+        <div class="footer-end">
+            <p>Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over
+                6 years, our customers have saved and invested billions of Naira that they would normally be tempted to
+                spend.</p>
+            <p><a href="#">2016 - 2022 PiggyTech Global Limited - RC 1405222</a></p>
+        </div>
+
+
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

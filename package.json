@@ -1,0 +1,28 @@
+{
+  "name": "piggyvest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build-css": "postcss css/tailwind.css -o src/css/tailwind.css",
+    "watch-css": "postcss css/tailwind.css -o src/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dam-taj/Piggyvest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dam-taj/Piggyvest/issues"
+  },
+  "homepage": "https://github.com/dam-taj/Piggyvest#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0"
+  }
+}
